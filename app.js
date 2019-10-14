@@ -15,7 +15,7 @@ app.get('', function(req, res){
 
 app.get('/omdb', function(req, res){
   if(!req.query.search){
-    res.send({
+    return res.send({
       error: "debes enviar un titulo de una pelicula o serie"
     })
   }
