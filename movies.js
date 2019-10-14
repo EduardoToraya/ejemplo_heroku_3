@@ -1,7 +1,7 @@
 const request = require("request")
 
 
-if(process.env.Node_ENV === "production"){
+if(process.env.NODE_ENV === "production"){
   var apikey = process.env.API_KEY
 }
 else{
