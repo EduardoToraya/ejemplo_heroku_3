@@ -3,6 +3,10 @@ const omdb = require('./movies.js')
 
 const app = express()
 
+const port = process.env.PORT || 3000
+
+
+
 app.get('', function(req, res){
   res.send({
     greeting: 'Hola mundo'
@@ -51,6 +55,6 @@ app.get('*', function(res, res){
   })
 })
 
-app.listen(3000, function(){
+app.listen(port, function(){
   console.log('Up and running')
 })
